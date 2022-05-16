@@ -23,6 +23,6 @@ function possCDF = possCDF(x,l)
     
         bar(V,values_array);
         title('Percentage of occurance in intended trial');
-        xlabel('Percentage (%)');
-        ylabel('Intended Trials');
+        xlabel('Intended Trials');
+        ylabel('Percentage (%)');
 end
