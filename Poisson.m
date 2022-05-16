@@ -8,9 +8,7 @@ possCDF(2,1.8)
 
 function possPMF = possPMF(k,l)
     e = exp(1);
-    
     possPMF = ((l^k)*(e^(-l)))/factorial(k);
-
 end
 
 
@@ -22,6 +20,7 @@ function possCDF = possCDF(x,l)
     for k= 1:1:x
         values_array(k)= (((l^k)*(e^(-l)))/factorial(k))*100;
     end
+    
         bar(V,values_array);
         title('Percentage of occurance in intended trial');
         xlabel('Percentage (%)');
